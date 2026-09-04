@@ -41,9 +41,10 @@ ul {
 .main-content {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    background-color: #f5e1a4;
+    background-color: #dcdfe0;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 16px;
 }
 
 .projects-section {
@@ -51,6 +52,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 5fr 5fr 5fr;
+    gap: 16px;
+    margin-right: 16px;
 }
 
 .project-header {
@@ -60,8 +63,64 @@ ul {
 }
 
 .project-card {
-    background-color: #f0e4bf;
-    border: 1px solid #dd7119;
+    position: relative;
+    background-color: #fbfbfb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+
+    border-left: solid 8px rgb(250, 160, 26);
+    padding: 32px;
+    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.project-card h3 {
+    margin: 0;
+}
+
+.project-desc {
+    margin: 0;
+    line-clamp: 6;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.action-buttons {
+    position: absolute;
+    bottom: 12px;
+    right: 32px;
+    display: flex;
+    gap: 8px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    padding: 0;
+
+    border-radius: 4px;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #151515;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.action-btn:hover {
+    background-color: #ef9e5b;
+    color: #232323;
+}
+
+.action-btn svg {
+    width: 16px;
+    height: 16px;
 }
 
 .side-section {
@@ -88,6 +147,15 @@ ul {
 
 }
 
+.announcement-desc {
+    margin: 0;
+    line-clamp: 3;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .trending-card {
     grid-row: 2 / 3;
     /* background-color: #f0e4bf;
@@ -98,4 +166,8 @@ ul {
 
 .trending-item {
     border: 1px solid #5d2e07;
+}
+
+h2 {
+    align-self: center;
 }
