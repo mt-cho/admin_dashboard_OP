@@ -9,49 +9,82 @@
   <body>
     <div class="main-grid">
       <div class="sidebar">
-        <p><img src="view-dashboard.svg" alt="Dashboard" /><b>Dashboard</b></p>
+        <p id="dashboard">
+          <img src="view-dashboard.svg" alt="Dashboard" /><b>Dashboard</b>
+        </p>
         <ul>
           <li>
-            <img src="home.svg" alt="Home" />
-            Home
+            <a href="#"><img src="home.svg" alt="Home" /> Home</a>
           </li>
           <li>
-            <img src="profile.svg" alt="Profile" />
-            Profile
+            <a href="#"><img src="profile.svg" alt="Profile" /> Profile</a>
           </li>
           <li>
-            <img src="message.svg" alt="Messages" />
-            Messages
+            <a href="#"><img src="message.svg" alt="Messages" /> Messages</a>
           </li>
           <li>
-            <img src="history.svg" alt="History" />
-            History
+            <a href="#"><img src="history.svg" alt="History" /> History</a>
           </li>
           <li>
-            <img src="task.svg" alt="Tasks" />
-            Tasks
+            <a href="#"><img src="task.svg" alt="Tasks" /> Tasks</a>
           </li>
           <li>
-            <img src="community.svg" alt="Communities" />
-            Communities
+            <a href="#"
+              ><img src="community.svg" alt="Communities" /> Communities</a
+            >
           </li>
         </ul>
         <ul>
           <li>
-            <img src="setting.svg" alt="Settings" />
-            Settings
+            <a href="#"><img src="setting.svg" alt="Settings" /> Settings</a>
           </li>
           <li>
-            <img src="support.svg" alt="Support" />
-            Support
+            <a href="#"><img src="support.svg" alt="Support" /> Support</a>
           </li>
           <li>
-            <img src="privacy.svg" alt="Privacy" />
-            Privacy
+            <a href="#"><img src="privacy.svg" alt="Privacy" /> Privacy</a>
           </li>
         </ul>
       </div>
-      <div class="header">header</div>
+
+      <div class="header">
+        <!-- Row 1 -->
+        <div class="header-row">
+          <div class="search-bar">
+            <div class="header-icon-wrapper">
+              <img src="magnifying-glass-svgrepo-com.svg" alt="Search" />
+            </div>
+            <input id="search-bar" type="text" placeholder="Search..." />
+          </div>
+
+          <div class="user-profile">
+            <div class="header-icon-wrapper">
+              <img src="bell-alt-svgrepo-com.svg" alt="Notifications" />
+            </div>
+            <img src="avatar.avif" class="avatar-sm" alt="Morgan Oakley" />
+            <span class="user-name">Morgan Oakley</span>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="header-row">
+          <div class="user-greeting">
+            <div class="avatar-cropper">
+              <img src="avatar.avif" class="avatar-lg" alt="Morgan Oakley" />
+            </div>
+
+            <p class="sub-text">Hi there,</p>
+            <h2 class="user-handle">Morgan Oakley (@morgan)</h2>
+          </div>
+
+          <div class="cta-buttons">
+            <a href="#" class="btn">New</a>
+            <a href="#" class="btn">Upload</a>
+            <a href="#" class="btn">Share</a>
+          </div>
+        </div>
+      </div>
+
       <div class="main-content">
         <div class="projects-section">
           <h2 class="project-header">Your Projects</h2>
